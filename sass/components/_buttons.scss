@@ -1,0 +1,8 @@
+.button {
+  @include button();
+}
+
+.button-link {
+  @include button-link();
+}
+

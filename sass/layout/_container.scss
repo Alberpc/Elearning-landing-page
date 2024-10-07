@@ -1,0 +1,24 @@
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      @include breakpoint(tablethorizontal) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      @include breakpoint(desktop) {
+       padding-left: 50px;
+       padding-right: 50px;
+      }
+
+}

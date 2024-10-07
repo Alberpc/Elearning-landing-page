@@ -1,0 +1,21 @@
+.footer_principal {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $blue;
+   
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        ul {
+            @include reset-list();
+        }
+        a.button {
+            background-image: $gradient-pink-blue;
+            &:hover {
+                background-image: $gradient-pink-orange;
+            }
+        }
+    }
+}
